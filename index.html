@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cieal Stack Financeiro - Estrutura Pura</title>
+  <!-- Link para o CSS que criaremos no Passo 2 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Container principal para limitar a largura da página -->
+  <main class="container">
+
+    <!-- Bloco 1: Cabeçalho (Header) -->
+    <header class="header">
+      <h1 class="header__title">Cieal Stack Financeiro</h1>
+      <p class="header__subtitle">Controle de receitas e despesas pessoal</p>
+    </header>
+
+    <!-- Bloco 2: Resumo (Cards) -->
+    <section class="summary">
+      <!-- Usamos <article> para os cards porque são blocos de conteúdo independentes e autoexplicativos -->
+      <article class="card card--balance">
+        <h2 class="card__title">Saldo Total</h2>
+        <p class="card__value" id="balanceValue">R$ 0,00</p>
+      </article>
+      
+      <article class="card card--income">
+        <h2 class="card__title">Total Receitas</h2>
+        <p class="card__value" id="incomeValue">R$ 0,00</p>
+      </article>
+      
+      <article class="card card--expense">
+        <h2 class="card__title">Total Despesas</h2>
+        <p class="card__value" id="expenseValue">R$ 0,00</p>
+      </article>
+    </section>
+
+    <!-- Bloco 3: Formulário de Entrada (Cadastro de Lançamentos) -->
+    <section class="transaction-form-section">
+      <h2 class="section-title">Nova Transação</h2>
+      
+      <!-- O elemento <form> agrupa os campos e permite o envio (submit) disparado pelo teclado ou pelo botão -->
+      <form class="transaction-form" id="transactionForm">
+        
+        <div class="form-group">
+          <label for="description" class="form-group__label">Descrição</label>
+          <input type="text" id="description" class="form-group__input" placeholder="Ex: Salário, Aluguel" required autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label for="amount" class="form-group__label">Valor (R$)</label>
+          <input type="number" id="amount" step="0.01" min="0.01" class="form-group__input" placeholder="0,00" required>
+        </div>
+
+        <div class="form-group">
+          <label for="type" class="form-group__label">Tipo</label>
+          <select id="type" class="form-group__select" required>
+            <option value="" disabled selected hidden>Selecione...</option>
+            <option value="income">Receita</option>
+            <option value="expense">Despesa</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date" class="form-group__label">Data</label>
+          <input type="date" id="date" class="form-group__input" required>
+        </div>
+
+        <button type="submit" class="btn btn--submit">Adicionar</button>
+      </form>
+    </section>
+
+    <!-- Bloco 4: Lista de Transações (Histórico em Tabela) -->
+    <section class="transaction-history">
+      <h2 class="section-title">Histórico de Transações</h2>
+      
+      <div class="table-container">
+        <!-- Usamos <table> por se tratar de dados tabulares (colunas e linhas bem definidas) -->
+        <table class="transaction-table">
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>Tipo</th>
+              <th>Data</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="transactionList">
+            <!-- As linhas da tabela (<tr>) serão inseridas dinamicamente pelo JavaScript -->
+            <tr class="empty-state">
+              <td colspan="5" style="text-align: center;">Nenhuma transação cadastrada ainda.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Script que criaremos a partir do Passo 3 -->
+  <script src="script.js"></script>
+</body>
+</html>
