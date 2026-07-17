@@ -1,17 +1,21 @@
 .header {
-  background-color: var(--header-background-color);
-  padding: 20px;
+  background: linear-gradient(135deg, var(--color-primary), #2e7d32);
+  color: #ffffff;
+  padding: 32px 24px;
+  border-radius: 16px;
+  margin-bottom: 24px;
   text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .header__title {
-  font-size: 2.5rem;
-  color: var(--header-title-color);
-  margin: 0;
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin: 0 0 6px;
 }
 
 .header__subtitle {
-  font-size: 1.2rem;
-  color: var(--header-subtitle-color);
-  margin-top: 5px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
 }
