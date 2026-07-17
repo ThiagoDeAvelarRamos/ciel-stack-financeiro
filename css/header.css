@@ -1,0 +1,17 @@
+.header {
+  background-color: var(--header-background-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 2.5rem;
+  color: var(--header-title-color);
+  margin: 0;
+}
+
+.header__subtitle {
+  font-size: 1.2rem;
+  color: var(--header-subtitle-color);
+  margin-top: 5px;
+}

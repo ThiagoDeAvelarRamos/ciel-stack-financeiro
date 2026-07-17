@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #4CAF50; /* Cor primária */
+  --color-secondary: #FF9800; /* Cor secundária */
+  --color-background: #F5F5F5; /* Cor de fundo */
+  --color-text: #333333; /* Cor do texto */
+  --color-header-bg: #FFFFFF; /* Cor de fundo do cabeçalho */
+  --color-card-bg: #FFFFFF; /* Cor de fundo dos cards */
+  --color-card-border: #E0E0E0; /* Cor da borda dos cards */
+  --color-button-bg: #4CAF50; /* Cor de fundo do botão */
+  --color-button-hover: #45A049; /* Cor de fundo do botão ao passar o mouse */
+  --color-table-header-bg: #F1F1F1; /* Cor de fundo do cabeçalho da tabela */
+  --color-table-row-bg: #FFFFFF; /* Cor de fundo das linhas da tabela */
+  --color-table-row-hover: #F9F9F9; /* Cor de fundo da linha da tabela ao passar o mouse */
+}
