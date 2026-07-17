@@ -1,34 +1,12 @@
 :root {
-  --color-primary: #4CAF50;
-  --color-secondary: #FF9800;
-  --color-primary-dark: #45A049;
-  --color-background: #f5f7fb;
-  --color-surface: #ffffff;
-  --color-text: #333333;
-  --color-text-muted: #6b7280;
-  --color-border: #e0e0e0;
-  --color-header-bg: #ffffff;
-  --color-header-text: #333333;
-  --color-card-bg: #ffffff;
-  --color-card-border: #e0e0e0;
-  --color-button-bg: #4CAF50;
-  --color-button-hover: #45A049;
-  --color-table-header-bg: #f1f1f1;
-  --color-table-row-bg: #ffffff;
-  --color-table-row-hover: #f9f9f9;
-  --color-row-bg: #ffffff;
-  --color-row-hover: #f9f9f9;
-
-  --primary-color: #4CAF50;
-  --secondary-color: #FF9800;
-  --primary-color-dark: #45A049;
-  --background-color: #f5f7fb;
-  --text-color: #333333;
-  --border-color: #e0e0e0;
-  --card-background: #ffffff;
-  --header-background-color: #ffffff;
-  --header-title-color: #1f2937;
-  --header-subtitle-color: #6b7280;
+  --color-background: #0f1419;
+  --color-surface: #1a1f28;
+  --color-primary: #10b981;
+  --color-success: #34d399;
+  --color-danger: #ef4444;
+  --color-text: #f3f4f6;
+  --color-text-muted: #9ca3af;
+  --color-border: #374151;
 }
 
 * {
