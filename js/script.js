@@ -143,7 +143,7 @@ function addTransaction(e) {
   const date = dateInput.value;
 
   if (!description || isNaN(amount) || !type || !date) {
-    alert('Por favor, preencha todos os campos corretamente.');
+    mostrarToast('Por favor, preencha todos os campos corretamente.', 'danger');
     return;
   }
 
@@ -160,6 +160,9 @@ function addTransaction(e) {
   saveTransactions();
   updateUI();
 
+  // Exibe notificação de sucesso
+  mostrarToast('Transação adicionada com sucesso!', 'success');
+
   // Limpa os campos do formulário
   transactionForm.reset();
   if (dateInput) {
@@ -172,6 +175,7 @@ function deleteTransaction(id) {
   transactions = transactions.filter(t => t.id !== id);
   saveTransactions();
   updateUI();
+  mostrarToast('Transação removida.', 'danger');
 }
 
 // Atualizar toda a interface
