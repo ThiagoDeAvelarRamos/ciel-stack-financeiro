@@ -15,7 +15,7 @@
   width: 100%;
   border-collapse: collapse;
   margin: 0;
-  background: #ffffff;
+  background: var(--color-table-row-bg);
 }
 
 .transaction-table th,
@@ -27,12 +27,12 @@
 
 .transaction-table th {
   background-color: var(--color-table-header-bg);
-  color: #374151;
+  color: var(--color-text-dark);
   font-weight: 600;
 }
 
 .transaction-table tbody tr:nth-child(even) {
-  background-color: var(--color-table-row-bg);
+  background-color: var(--color-table-row-even);
 }
 
 .transaction-table tbody tr:hover {
@@ -55,15 +55,15 @@
 }
 
 .btn-delete:hover {
-  background-color: rgba(231, 76, 60, 0.15);
+  background-color: var(--color-btn-delete-hover);
 }
 
 .text-income {
-  color: #2ecc71;
+  color: var(--color-success);
   font-weight: 600;
 }
 
 .text-expense {
-  color: #e74c3c;
+  color: var(--color-danger);
   font-weight: 600;
 }

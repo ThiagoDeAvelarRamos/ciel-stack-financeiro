@@ -16,17 +16,17 @@
 
 .card--balance {
   border-top: 4px solid var(--color-primary);
-  border-left: 6px solid #10b981;
+  border-left: 6px solid var(--color-primary);
 }
 
 .card--income {
-  border-top: 4px solid #10b981;
-  border-left: 6px solid #34d399;
+  border-top: 4px solid var(--color-primary);
+  border-left: 6px solid var(--color-primary-light);
 }
 
 .card--expense {
-  border-top: 4px solid #ef4444;
-  border-left: 6px solid #ef4444;
+  border-top: 4px solid var(--color-danger);
+  border-left: 6px solid var(--color-danger);
 }
 
 .card__title {
@@ -38,6 +38,6 @@
 .card__value {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--color-accent);
   margin: 0;
 }

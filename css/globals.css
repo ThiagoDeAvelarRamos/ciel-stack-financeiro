@@ -1,12 +1,34 @@
 :root {
+  /* Cores Base de Layout */
   --color-background: #0f1419;
   --color-surface: #1a1f28;
+  --color-border: #374151;
+
+  /* Cores Principais / Destaque */
   --color-primary: #10b981;
-  --color-success: #34d399;
+  --color-primary-dark: #059669;
+  --color-primary-light: #34d399;
+  --color-accent: #10a5b9;
+
+  /* Status */
+  --color-success: #2ecc71;
   --color-danger: #ef4444;
+
+  /* Textos */
   --color-text: #f3f4f6;
   --color-text-muted: #9ca3af;
-  --color-border: #374151;
+  --color-text-dark: #374151;
+  --color-text-white: #ffffff;
+  --color-text-white-subtle: rgba(255, 255, 255, 0.9);
+
+  /* Elementos de Tabela e Formulário */
+  --color-table-header-bg: #f9fafb;
+  --color-table-row-bg: #ffffff;
+  --color-table-row-even: #f3f4f6;
+  --color-table-row-hover: #e5e7eb;
+  --color-input-bg: #ffffff;
+  --color-input-focus-shadow: rgba(16, 185, 129, 0.2);
+  --color-btn-delete-hover: rgba(231, 76, 60, 0.15);
 }
 
 * {
@@ -30,5 +52,5 @@ body {
 .section-title {
   font-size: 1.4rem;
   margin: 0 0 12px;
-  color: #1f2937;
+  color: var(--color-text);
 }
